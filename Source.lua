@@ -22,17 +22,7 @@ if settings then
 		RenderSettings.QualityLevel = Enum.QualityLevel.Level01
 		RenderSettings.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
 		UserGameSettings.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
-	end
-end
-
-if Settings.Terrain then
-	Terrain.WaterWaveSize = 0
-	Terrain.WaterWaveSpeed = 0
-	Terrain.WaterReflectance = 0
-	Terrain.WaterTransparency = 0
-
-	if sethiddenproperty then
-		sethiddenproperty(Terrain, "Decoration", false)
+		workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
 	end
 end
 
@@ -48,25 +38,26 @@ end
 
 if Settings.Texture then
 	workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
-	workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
 
 	if sethiddenproperty then
 		sethiddenproperty(workspace, "MeshPartHeads", Enum.MeshPartHeads.Disabled)
 	end
 end
 
+if Settings.Terrain then
+	Terrain.WaterWaveSize = 0
+	Terrain.WaterWaveSpeed = 0
+	Terrain.WaterReflectance = 0
+	Terrain.WaterTransparency = 0
+
+	if sethiddenproperty then
+		sethiddenproperty(Terrain, "Decoration", false)
+	end
+end
+
 for Index, Object in ipairs(game:GetDescendants()) do
 	if Object:IsA("Sky") and Settings.Texture then
-		Object.SkyboxBk = ""
-		Object.SkyboxBk = ""
-		Object.SkyboxDn = ""
-		Object.SkyboxFt = ""
-		Object.SkyboxLf = ""
-		Object.SkyboxRt = ""
-		Object.SkyboxUp = ""
 		Object.StarCount = 0
-		Object.SunTextureId = ""
-		Object.MoonTextureId = ""
 		Object.CelestialBodiesShown = false
 	elseif Object:IsA("BasePart") and Settings.Texture then
 		Object.Material = "SmoothPlastic"
