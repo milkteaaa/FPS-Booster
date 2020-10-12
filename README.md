@@ -39,9 +39,8 @@ Change the rendering settings, `Eager Bulk Execution` is disabled, `Interpolatio
 
 ### Lighting
 Lighting controls the game environment, so color saturation, brightness, and shadows are properties of Lighting.<br/>
-The option configures the properties: `Global Shadows`, `Fog Start`, `Fog End`, `Technology`, `Cast Shadow`, `Atmosphere` for the best performance and disable the `Color Correction`, `Depth Of Field`, `Sun Rays`, `Bloom` and `Blur`.<br/>
+The option configures the properties: `Global Shadows`, `Fog End`, `Technology`, `Cast Shadow`, `Atmosphere` for the best performance and disable the `Color Correction`, `Depth Of Field`, `Sun Rays`, `Bloom` and `Blur`.<br/>
 [`Global Shadows`](https://developer.roblox.com/en-us/api-reference/property/Lighting/GlobalShadows) - Toggles voxel-based dynamic lighting in the game. When enabled, shadows are rendered in sheltered areas depending on the position of the sun and moon.<br/>
-[`Fog Start`](https://developer.roblox.com/en-us/api-reference/property/Lighting/FogStart) - The depth from the camera, in studs, at which fog begins to show.<br/>
 [`Fog End`](https://developer.roblox.com/en-us/api-reference/property/Lighting/FogEnd) - The depth from the camera, in studs, at which fog will be completely opaque.<br/>
 [`Technology`](https://developer.roblox.com/en-us/api-reference/property/Lighting/Technology) - Determines the lighting system used to render the 3D world (e.g. legacy, Future is Bright, shadow map).<br/>
 [`Cast Shadow`](https://developer.roblox.com/en-us/api-reference/property/BasePart/CastShadow) - Determines whether or not a part casts a shadow.<br/>
