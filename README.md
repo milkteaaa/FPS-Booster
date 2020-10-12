@@ -18,7 +18,7 @@ _G.fps_Settings = {
 	Effects = false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GRIPPERTV/FPS-Booster/main/Source.lua?token=AQY2OYT7AWB2RMT7MX7VWKK7QPGXC", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GRIPPERTV/FPS-Booster/main/Source.lua", true))()
 ```
 The current settings in the code are the default settings, if you remove the settings from the code, it will be replaced by a default settings. Also the `loadstring` part is a way to make easier to copy the code, it loads the FPS Booster source code directory (is open source) and compiles it.<br/>
 
