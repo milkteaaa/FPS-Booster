@@ -28,8 +28,7 @@ end
 
 if Settings.Lighting then
 	Lighting.GlobalShadows = false
-	Lighting.FogStart = math.huge
-	Lighting.FogEnd = math.huge
+	Lighting.FogEnd = 1e9
 
 	if sethiddenproperty then
 		sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
