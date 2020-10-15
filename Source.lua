@@ -9,7 +9,6 @@ local Settings = _G.fps_Settings or {
 
 --> Variables
 local sethiddenproperty = sethiddenproperty or set_hidden_property or set_hidden_prop
-local newcclosure = newcclosure or function(Function) return Function end
 local Lighting = game:GetService("Lighting")
 local Terrain = workspace.Terrain
 
@@ -70,7 +69,7 @@ for Index, Object in ipairs(game:GetDescendants()) do
 	elseif Object:IsA("SurfaceAppearance") and Settings.Texture then
 		Object:Destroy()
 	elseif (Object:IsA("Decal") or Object:IsA("Texture")) and Object.Name ~= "face" and Settings.Texture then
-		Object.Texture = ""
+		Object.Transparency = 1
 	elseif (Object:IsA("ParticleEmitter") or Object:IsA("Sparkles") or Object:IsA("Smoke") or Object:IsA("Trail") or Object:IsA("Fire")) and Settings.Effects then
 		Object.Enabled = false
 	elseif (Object:IsA("ColorCorrectionEffect") or Object:IsA("DepthOfFieldEffect") or Object:IsA("SunRaysEffect") or Object:IsA("BloomEffect") or Object:IsA("BlurEffect")) and Settings.Lighting then
