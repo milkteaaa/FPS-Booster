@@ -52,7 +52,7 @@ The option configures the properties: `Global Shadows`, `Fog End`, `Technology`,
 [`Blur`](https://developer.roblox.com/en-us/api-reference/class/BlurEffect) - Applies a gaussian blur to the entire rendered game world.
 
 ### Texture
-Sets the material of the objects to Smooth Plastic (the least expensive material) and removes all the textures and decal. It also disables the detail level of the meshs, and remove the SurfaceApparence (a realistic texture attribute). **It's not changed for player avatars, such as face and packages.**<br/>
+Sets the material of the objects to Smooth Plastic (the least expensive material) and change textures and decals transparency to invisible. It also disables the detail level of the meshs, and remove the SurfaceApparence (a realistic texture attribute). **It's not changed for player avatars, such as face and packages.**<br/>
 [`Material`](https://developer.roblox.com/en-us/api-reference/property/BasePart/Material) - Set a part’s texture and default physical properties.<br/>
 [`Texture`](https://developer.roblox.com/en-us/api-reference/class/Texture) - Applies a repeating texture to the face of a part.<br/>
 [`Decal`](https://developer.roblox.com/en-us/api-reference/class/Decal) - Applies an image to a face of a part.<br/>
