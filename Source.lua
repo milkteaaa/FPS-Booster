@@ -30,7 +30,7 @@ if Settings.Lighting then
 	Lighting.FogEnd = 1e9
 
 	if sethiddenproperty then
-		sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
+		pcall(sethiddenproperty, Lighting, "Technology", Enum.Technology.Compatibility)
 	end
 end
 
@@ -38,7 +38,7 @@ if Settings.Texture then
 	workspace.LevelOfDetail = Enum.ModelLevelOfDetail.Disabled
 
 	if sethiddenproperty then
-		sethiddenproperty(workspace, "MeshPartHeads", Enum.MeshPartHeads.Disabled)
+		pcall(sethiddenproperty, workspace, "MeshPartHeads", Enum.MeshPartHeads.Disabled)
 	end
 end
 
