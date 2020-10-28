@@ -68,7 +68,7 @@ for Index, Object in ipairs(game:GetDescendants()) do
 		Object.Haze = 0
 	elseif Object:IsA("SurfaceAppearance") and Settings.Texture then
 		Object:Destroy()
-	elseif (Object:IsA("Decal") or Object:IsA("Texture")) and Object.Name ~= "face" and Settings.Texture then
+	elseif (Object:IsA("Decal") or Object:IsA("Texture")) and string.lower(Object.Parent.Name) ~= "head" and Settings.Texture then
 		Object.Transparency = 1
 	elseif (Object:IsA("ParticleEmitter") or Object:IsA("Sparkles") or Object:IsA("Smoke") or Object:IsA("Trail") or Object:IsA("Fire")) and Settings.Effects then
 		Object.Enabled = false
