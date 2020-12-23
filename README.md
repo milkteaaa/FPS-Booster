@@ -1,14 +1,7 @@
 # FPS-Booster
 Configure graphics, environments and objects for better performance, if your computer cannot run Roblox perfectly.
 
-# How to use
-First, you need a Lua Compiler (Exploit in Roblox), be careful when looking for one.<br/>
-Currently I use [KRNL](https://krnl.rocks/), although I need to see ads and complete steps to be able to use, but it's the best free.<br/>
-But I recommend [Synapse X](https://x.synapse.to/), it costs only 20 dollars, besides being the best on the market.<br/>
-If you don't have money and can't use KRNL, also have the [Electron](https://ryos.best/), it has almost the same build as KRNL.<br/>
-**Be careful when using an exploit, this violates Roblox's terms of use, and there are risks of deleting the account (https://en.help.roblox.com/hc/en-us/articles/203312450-Cheating-and-Exploiting).**<br/>
-
-After installing an exploit or already have it, we have the code below:
+# The Script
 ```lua
 _G.fps_Settings = {
 	Graphics = true,
@@ -22,9 +15,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GRIPPERTV/FPS-Booster
 ```
 The current settings in the code are the default settings, if you remove the settings from the code, it will be replaced by a default settings. Also the `loadstring` part is a way to make easier to copy the code, it loads the FPS Booster source code directory (is open source) and compiles it.<br/>
 
-If you don't know what each option does, look at this section [How to configure](#how-to-configure).<br/>
+If you don't know what each option does, look at this section [How to Configure](#how-to-configure).<br/>
 
-# How to configure
+# How to Configure
 You can specify which changes should be made, for example, if you want to don't remove the textures, just disable the textures in the settings.<br/>
 To disable and enable an option, use the booleans `true` (Enabled) and `false` (Disabled).<br/>
 So, to disable Texture (`Texture = true`), set to `false` (`Texture = false`).<br/>
