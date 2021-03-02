@@ -1,5 +1,5 @@
 --> Settings
-local Settings = _G.fps_Settings or {
+local Settings = _G.FPS_Settings or {
 	Graphics = true,
 	Lighting = true,
 	Texture = true,
